@@ -1,38 +1,91 @@
-.App {
+body {
+  font-size: 20px;
+}
+
+.contain-all {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contain {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contain .contain-item {
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contain-item h2 {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.contain-item h2:hover {
+  color: rebeccapurple;
+  background-color: rosybrown;
+}
+.reset {
+  cursor: pointer;
+}
+.reset:hover {
+  color: rgb(240, 14, 14);
+}
+
+/* ----------------Navbar----------------*/
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: #222222;
+}
+
+.navbar ul {
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #f4f4f4;
+  margin: 40px;
+}
+
+.navbar ul li a:hover {
+  color: blue;
+}
+
+/* ----------------Table Cart----------------*/
+
+.table-cart {
+  color: #f4f4f4;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  background: #434343;
+  display: flex;
+  justify-content: center;
+}
+
+.table-cart thead tr th {
+  padding-bottom: 10px;
+  border-bottom: #f4f4f4 1px solid;
+}
+
+.table-cart table {
+  /* border-collapse: collapse; */
+  width: 100%;
+}
+
+.table-cart table tbody tr td {
+  padding: 10px;
+}
+
+ion-icon {
+  cursor: pointer;
 }
